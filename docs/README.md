@@ -42,22 +42,22 @@ O projeto foi desenvolvido como parte do desafio **Ir Além – FIAP 2025**, com
 ## Protótipo e Componentes
 
 ### Circuito Completo
-<img src="/assets/circuitoEsp32sensores.png" alt="Circuito completo ESP32 com sensores" width="600"/>
+<img src="/assets/circuitoEsp32sensores.png" alt="Circuito completo ESP32 com sensores" width="500"/>
 
 ### Display OLED
-<img src="/assets/displayOLED.png" alt="Display OLED mostrando dados" width="200"/>
+<img src="/assets/displayOLED.png" alt="Display OLED mostrando dados" width="150"/>
 
 ### Módulo Relé
-<img src="/assets/moduloRele.png" alt="Módulo Relé" width="200"/>
+<img src="/assets/moduloRele.png" alt="Módulo Relé" width="150"/>
 
 ### Sensor DHT11
-<img src="/assets/sensorDHT11.png" alt="Sensor DHT11" width="200"/>
+<img src="/assets/sensorDHT11.png" alt="Sensor DHT11" width="150"/>
 
 ### Sensor LDR
-<img src="/assets/sensorLDR.png" alt="Sensor LDR" width="200"/>
+<img src="/assets/sensorLDR.png" alt="Sensor LDR" width="150"/>
 
 ### Sensor de Umidade do Solo
-<img src="/assets/sensorSolo.png" alt="Sensor de Umidade do Solo Capacitivo" width="500"/>
+<img src="/assets/sensorSolo.png" alt="Sensor de Umidade do Solo Capacitivo" width="400"/>
 
 ---
 
