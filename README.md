@@ -25,7 +25,7 @@
 
 ---
 
-# FarmTech – Projeto Ir Além (Opção 1)
+# FarmTech – Projeto Ir Além (1º Opção)
 
 Sistema de **monitoramento e automação agrícola** utilizando **ESP32** com sensores de temperatura, umidade, luminosidade e solo, integrado ao **Ubidots** para visualização em tempo real.  
 
