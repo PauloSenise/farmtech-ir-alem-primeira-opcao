@@ -169,6 +169,41 @@ void loop() {
 }
 ```
 
+## Integração com Ubidots
+
+O **Ubidots** é a plataforma IoT escolhida para este projeto, permitindo o envio, armazenamento e visualização dos dados coletados pelo ESP32.
+
+### Comunicação
+- Conexão via **MQTT** com biblioteca `UbidotsEsp32Mqtt`.  
+- Autenticação por **Token** do workspace.  
+- Envio periódico a cada 5 segundos.  
+
+### Variáveis enviadas
+- `temperatura` – leitura do DHT11 (°C)  
+- `umidade` – leitura do DHT11 (%)  
+- `luz` – leitura do LDR (0 = claro, 1 = escuro)  
+- `solo_percent` – leitura do sensor de solo (%)  
+
+### Criação automática
+- Na primeira publicação, o Ubidots cria automaticamente:  
+  - **Device** com o label definido em `DEVICE_LABEL` (ex.: `esp32-farmtech`)  
+  - **Variáveis** correspondentes às adicionadas no código (`ubidots.add(...)`)  
+
+### Dashboard
+- Dashboard configurado com gráficos e indicadores para:  
+  - Temperatura (linha)  
+  - Umidade (linha)  
+  - Solo (%) (gauge e linha)  
+  - Estado da bomba (indicador ON/OFF)  
+
+### Benefícios
+- Monitoramento remoto centralizado.  
+- Histórico de dados armazenado na nuvem.  
+- Facilidade de criar alertas automáticos.  
+- Integração futura com APIs externas e IA preditiva.  
+
+---
+
 ## Referências
 - [Documentação Ubidots](https://ubidots.com/docs/)  
 - [Biblioteca Adafruit SSD1306](https://github.com/adafruit/Adafruit_SSD1306)  
@@ -189,14 +224,6 @@ Depois de calibrado, o sistema pode **interpretar corretamente a umidade do solo
 - Redução de desperdício de água.  
 - Histórico de leituras disponível no Ubidots.  
 - Base inicial para análises futuras com **Machine Learning**.  
-
----
-
-## Melhorias Futuras
-- Inclusão de sensores adicionais (pH, condutividade elétrica, pluviômetro).  
-- Envio de **alertas automáticos** via WhatsApp ou e-mail.  
-- Integração com **APIs climáticas** para prever irrigação.  
-- Treinamento de modelos de **IA preditiva** para recomendações de irrigação.  
 
 ---
 
