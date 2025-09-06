@@ -29,6 +29,37 @@ O projeto foi desenvolvido como parte do desafio **Ir Além – FIAP 2025**, com
 - **Ubidots** – Plataforma IoT para armazenamento e visualização dos dados.  
 
 ---
+## Funcionamento Técnico
+
+- O ESP32 lê os sensores (DHT11, LDR, Solo).  
+- Aplica **filtro EMA** para suavizar ruídos no sensor de solo.  
+- Usa **histerese** para controle do relé (liga bomba ≤ 40%, desliga ≥ 50%).  
+- Mostra valores no **display OLED**.  
+- Envia dados ao **Ubidots via MQTT**.  
+
+---
+
+## Protótipo e Componentes
+
+### Circuito Completo
+<img src="../assets/circuitoEsp32sensores.jpg" alt="Circuito completo ESP32 com sensores" width="600"/>
+
+### Display OLED
+<img src="../assets/displayOLED.jpg" alt="Display OLED mostrando dados" width="400"/>
+
+### Módulo Relé
+<img src="../assets/moduloRele.jpg" alt="Módulo Relé" width="400"/>
+
+### Sensor DHT11
+<img src="../assets/sensorDHT11.jpg" alt="Sensor DHT11" width="400"/>
+
+### Sensor LDR
+<img src="../assets/sensorLDR.jpg" alt="Sensor LDR" width="400"/>
+
+### Sensor de Umidade do Solo
+<img src="../assets/sensorSolo.jpg" alt="Sensor de Umidade do Solo Capacitivo" width="500"/>
+
+---
 
 ## Fluxo de Dados e Processamento
 
@@ -137,6 +168,13 @@ void loop() {
   delay(3000); // espera antes do próximo bloco de leituras
 }
 ```
+
+## Referências
+- [Documentação Ubidots](https://ubidots.com/docs/)  
+- [Biblioteca Adafruit SSD1306](https://github.com/adafruit/Adafruit_SSD1306)  
+- [Biblioteca DHT](https://github.com/adafruit/DHT-sensor-library)  
+
+---
 
 ---
 
