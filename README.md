@@ -74,7 +74,7 @@ Projeto desenvolvido como parte da disciplina **Ir Além – FIAP 2025**.
 
 A estação envia os dados em tempo real para a nuvem, onde podem ser visualizados em gráficos no **dashboard do Ubidots**:
 
-<img src="assets/ubidots.png" alt="Dashboard Ubidots" width="600"/>
+<img src="assets/ubidots.png" alt="Dashboard Ubidots" width="800"/>
 
 ---
 
