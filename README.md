@@ -1,4 +1,4 @@
-# FIAP - Faculdade de Informática e Administração Paulista 
+# Faculdade de Informática e Administração Paulista 
 
 <p align="center">
   <a href="https://www.fiap.com.br/">
@@ -33,44 +33,44 @@ Projeto desenvolvido como parte da disciplina **Ir Além – FIAP 2025**.
 
 ---
 
-## 🚀 Funcionalidades
+## Funcionalidades
 
-- 📡 **Coleta de dados** com sensores:
+- **Coleta de dados** com sensores:
   - **DHT11** → Temperatura e Umidade do ar  
   - **LDR** → Luminosidade (claro/escuro)  
   - **Sensor de Solo** → Umidade (%)  
-- 💡 **Exibição local** dos valores em display OLED  
-- 🌐 **Integração com Ubidots** para monitoramento em dashboard  
-- 💧 **Controle automático de bomba** via módulo relé  
-- 🔄 **Processamento inteligente** com filtro EMA e histerese para evitar acionamentos falsos  
+- **Exibição local** dos valores em display OLED  
+- **Integração com Ubidots** para monitoramento em dashboard  
+- **Controle automático de bomba** via módulo relé  
+- **Processamento inteligente** com filtro EMA e histerese para evitar acionamentos falsos  
 
 ---
 
-## 🖼️ Arquitetura do Sistema
+## Arquitetura do Sistema
 
 <img src="assets/arquitetura.png" alt="Arquitetura do Sistema" width="500"/>
 
 ---
 
-## ⚙️ Fluxograma de Funcionamento
+## Fluxograma de Funcionamento
 
 <img src="assets/fluxograma.png" alt="Fluxograma" width="500"/>
 
 ---
 
-## 🔌 Protótipo em Protoboard
+## Protótipo em Protoboard
 
 <img src="assets/calibracaosensorsolo.jpg" alt="Protótipo em Protoboard" width="400"/>
 
 ---
 
-## 🔲 ESP32 Utilizado
+## ESP32 Utilizado
 
 <img src="assets/esp32.png" alt="ESP32" width="300"/>
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **ESP32 NodeMCU**  
 - **Arduino IDE**  
@@ -81,7 +81,7 @@ Projeto desenvolvido como parte da disciplina **Ir Além – FIAP 2025**.
 
 ---
 
-## 📊 Exemplo de Dados no OLED
+## Exemplo de Dados no OLED
 
 ```
 Temp: 25.6°C
@@ -93,7 +93,7 @@ Bomba: ON
 
 ---
 
-## 📂 Estrutura do Repositório
+## Estrutura do Repositório
 
 ```
 fase5-cap1-ir-alem-primeira-opcao/
