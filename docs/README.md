@@ -61,27 +61,6 @@ O projeto foi desenvolvido como parte do desafio **Ir Além – FIAP 2025**, com
 
 ---
 
-## Fluxo de Dados e Processamento
-
-1. **Leitura dos Sensores**  
-   O ESP32 coleta, a cada 5 segundos, dados de temperatura, umidade do ar, luminosidade e umidade do solo.
-
-2. **Tratamento de Sinal**  
-   - Aplicação de **Filtro EMA (Exponential Moving Average)** para suavizar leituras do sensor de solo.  
-   - Uso de **histerese** para evitar acionamento/desligamento frequente da bomba.
-
-3. **Decisão Automática**  
-   - Se **umidade do solo ≤ 40% → liga a bomba**.  
-   - Se **umidade do solo ≥ 50% → desliga a bomba**.  
-
-4. **Exibição Local**  
-   O display OLED mostra os valores lidos e o estado atual da bomba.
-
-5. **Envio para a Nuvem**  
-   Dados são enviados ao **Ubidots**, onde podem ser analisados em dashboards e gráficos.
-
----
-
 ## Calibração do Sensor de Solo
 
 O sensor capacitivo de umidade do solo não fornece valores em **percentual direto (%)**.  
@@ -106,6 +85,27 @@ Para que o sistema possa **converter corretamente os valores em %**, é necessá
    - Coloque o sensor em um solo **molhado/encharcado** (com água visível).  
    - Aguarde estabilizar e registre a média.  
    - Esse valor será o **ponto máximo de saturação** (ex.: 1200).  
+
+---
+
+## Fluxo de Dados e Processamento
+
+1. **Leitura dos Sensores**  
+   O ESP32 coleta, a cada 5 segundos, dados de temperatura, umidade do ar, luminosidade e umidade do solo.
+
+2. **Tratamento de Sinal**  
+   - Aplicação de **Filtro EMA (Exponential Moving Average)** para suavizar leituras do sensor de solo.  
+   - Uso de **histerese** para evitar acionamento/desligamento frequente da bomba.
+
+3. **Decisão Automática**  
+   - Se **umidade do solo ≤ 40% → liga a bomba**.  
+   - Se **umidade do solo ≥ 50% → desliga a bomba**.  
+
+4. **Exibição Local**  
+   O display OLED mostra os valores lidos e o estado atual da bomba.
+
+5. **Envio para a Nuvem**  
+   Dados são enviados ao **Ubidots**, onde podem ser analisados em dashboards e gráficos.
 
 ---
 
