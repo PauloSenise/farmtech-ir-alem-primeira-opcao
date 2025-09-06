@@ -58,7 +58,7 @@ Em vez disso, ele retorna valores **analógicos (0–4095)** no ESP32, que varia
 
 Para que o sistema possa **converter corretamente os valores em %**, é necessário um **procedimento de calibração**.
 
-### 🔧 Procedimento de Calibração
+### Procedimento de Calibração
 
 1. **Solo seco**  
    - Coloque o sensor em solo **completamente seco**.  
