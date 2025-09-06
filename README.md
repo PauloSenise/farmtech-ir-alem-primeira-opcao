@@ -60,13 +60,13 @@ Projeto desenvolvido como parte da disciplina **Ir Além – FIAP 2025**.
 
 ## Protótipo em Protoboard
 
-<img src="assets/calibracaosensorsolo.jpg" alt="Protótipo em Protoboard" width="400"/>
+<img src="assets/calibracaosensorsolo.jpg" alt="Protótipo em Protoboard" width="300"/>
 
 ---
 
 ## ESP32 Utilizado
 
-<img src="assets/esp32.png" alt="ESP32" width="300"/>
+<img src="assets/esp32.png" alt="ESP32" width="200"/>
 
 ---
 
@@ -74,8 +74,7 @@ Projeto desenvolvido como parte da disciplina **Ir Além – FIAP 2025**.
 
 A estação envia os dados em tempo real para a nuvem, onde podem ser visualizados em gráficos no **dashboard do Ubidots**:
 
-<img src="assets/ubidots.png" alt="Dashboard Ubidots" width="800"/>
-
+<img src="assets/ubidots.png" alt="Dashboard Ubidots" width="1000"/>
 ---
 
 ## Tecnologias Utilizadas
